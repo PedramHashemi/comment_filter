@@ -1,5 +1,6 @@
 import string
 
+
 def remove_RT(text: str):
     """
 
@@ -11,6 +12,7 @@ def remove_RT(text: str):
     """
     return " ".join([_ for _ in text.split() if _ != 'RT'])
 
+
 def remove_mention(text: str):
     """
 
@@ -21,6 +23,7 @@ def remove_mention(text: str):
 
     """
     return " ".join([_ for _ in text.split() if not _.startswith("@")])
+
 
 def remove_punctuations(text: str):
     """
@@ -44,6 +47,7 @@ def remove_amp(text: str):
 
     """
     return " ".join([_ for _ in text.split() if not _.startswith("&amp;")])
+
 
 def remove_quoted_printable(text):
     """
